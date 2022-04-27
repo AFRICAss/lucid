@@ -1,132 +1,1 @@
-<!DOCTYPE html>
-
-<html lang="en" data-theme="luxury" id="themer">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="./css/cursor.css" rel="stylesheet" type="text/css">
-    <link href=" ./css/full.css " rel="stylesheet " type="text/css " />
-    <link href=" ./css/scroll.css " rel="stylesheet " type="text/css " id="scroller" />
-    <link href=" ./css/modern.min.css " rel="stylesheet " type="text/css " />
-    <script src="./js/tailwind.js "></script>
-    <script src="./js/winbox.bundle.js "></script>
-    <script src="./js/nodecursor.js "></script>
-
-
-
-
-
-
-
-
-    <title>Lucid | A new internet</title>
-
-</head>
-
-
-<body>
-    <div id="dev">
-
-
-
-
-        <div class="navbar bg-base-100">
-            <header class="sticky top-0 z-50"></header>
-
-            <div class="node" id="node"></div>
-            <div class="cursor" id="cursor"></div>
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-            </label>
-                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li>
-                            <a href="https://discord.gg/aJMqAxRH">Community</a>
-                        </li>
-                        <li>
-                            <a>Credits</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="navbar-center">
-                <a class="btn btn-ghost normal-case text-xl ">Lucid</a>
-            </div>
-            <div class="navbar-end ">
-                <label class="swap swap-rotate">
-                    <input type="checkbox" onclick="toggleTheme();"/>
-                    
-                    <svg class="swap-on fill-current w-7 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
-
-                    <svg class="swap-off fill-current w-7 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
-                    
-                  </label>
-            </div>
-        </div>
-
-        <div class="hero min-h-screen bg-base-200 ">
-            <div class="hero-content text-center ">
-                <div class="max-w-md ">
-                    <h1 class="text-5xl font-bold hover__btn nodeHover">Lucid</h1>
-                    <p class="py-6  hover__btn nodeHover">Lucid is the web-proxy of the future, featuring a beautifully crafted front-end along with about:blank cloaking and many other features that set it apart from the rest. Join our
-                        <a class="link" href="https://discord.gg/aJMqAxRH">Discord</a> for more links and support.
-                    </p>
-                    <input type="text" placeholder="Type here" class="input input-bordered input-outline  w-full max-w-xs" id="srchinput">
-                    <button class="btn btn-active btn-ghost" id="srchbutton">Search</button>
-                </div>
-            </div>
-        </div>
-
-
-        <footer class="footer items-center p-4 bg-neutral text-neutral-content ">
-            <div class="items-center grid-flow-col ">
-                <svg width="36 " height="36 " viewBox="0 0 24 24 " xmlns="http://www.w3.org/2000/svg " fill-rule="evenodd " clip-rule="evenodd " class="fill-current "><path d=" "></path></svg>
-                <p>Lucid Copyright © 2022</p>
-            </div>
-            <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end ">
-                <a><svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 " class="fill-current "><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179
-                        0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678
-                        2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z "></path></svg>
-              </a>
-                <a><svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 " class="fill-current "><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245
-                        11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z "></path></svg></a>
-                <a><svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 " class="fill-current "><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192
-                        4.615v3.385z "></path></svg></a>
-            </div>
-        </footer>
-
-        <script>
-            var initCursor = new NodeCursor({
-                cursor: true,
-                node: true,
-                cursor_velocity: 1,
-                node_velocity: .35,
-                native_cursor: 'none',
-                element_to_hover: '.nodeHover',
-                cursor_class_hover: 'disable',
-                node_class_hover: 'expand',
-                hide_mode: true,
-                hide_timing: 2000,
-            });
-        </script>
-
-
-        <script src="./js/windowHandler.js "></script>
-        <script src="uv/uv.bundle.js"></script>
-        <script src="uv/uv.config.js"></script>
-        <script src="index.js"></script>
-        <script src="./js/darkmode.js "></script>
-
-    </div>
-
-
-
-
-</body>
-
-</html>
+<script>var s="=\"EPDUZQF!iunm?=iunm!mboh>#fo#!ebub.uifnf>#mvyvsz#!je>#uifnfs#?=ifbe?!!!!=nfub!dibstfu>#VUG.9#?!!!!=nfub!iuuq.frvjw>#Y.VB.Dpnqbujcmf#!dpoufou>#JF>fehf#?!!!!=nfub!obnf>#wjfxqpsu#!dpoufou>#xjeui>efwjdf.xjeui-!jojujbm.tdbmf>2/1#?!!!!=mjol!isfg>#tuzmf/dtt#!sfm>#tuzmftiffu#!uzqf>#ufyu0dtt#?!!!!=mjol!isfg>#/0dtt0dvstps/dtt#!sfm>#tuzmftiffu#!uzqf>#ufyu0dtt#?!!!!=mjol!isfg>#!/0dtt0gvmm/dtt!#!sfm>#tuzmftiffu!#!uzqf>#ufyu0dtt!#!0?!!!!=mjol!isfg>#!/0dtt0tdspmm/dtt!#!sfm>#tuzmftiffu!#!uzqf>#ufyu0dtt!#!je>#tdspmmfs#!0?!!!!=mjol!isfg>#!/0dtt0npefso/njo/dtt!#!sfm>#tuzmftiffu!#!uzqf>#ufyu0dtt!#!0?!!!!=tdsjqu!tsd>#/0kt0ubjmxjoe/kt!#?=0tdsjqu?!!!!=tdsjqu!tsd>#/0kt0xjocpy/cvoemf/kt!#?=0tdsjqu?!!!!=tdsjqu!tsd>#/0kt0opefdvstps/kt!#?=0tdsjqu?!!!!=ujumf?Mvdje!}!B!ofx!joufsofu=0ujumf?=0ifbe?=cpez?!!!!=ejw!je>#efw#?!!!!!!!!=ejw!dmbtt>#obwcbs!ch.cbtf.211#?!!!!!!!!!!!!=ifbefs!dmbtt>#tujdlz!upq.1!{.61#?=0ifbefs?!!!!!!!!!!!!=ejw!dmbtt>#opef#!je>#opef#?=0ejw?!!!!!!!!!!!!=ejw!dmbtt>#dvstps#!je>#dvstps#?=0ejw?!!!!!!!!!!!!=ejw!dmbtt>#obwcbs.tubsu#?!!!!!!!!!!!!!!!!=ejw!dmbtt>#espqepxo#?!!!!!!!!!!!!!!!!!!!!=mbcfm!ubcjoefy>#1#!dmbtt>#cuo!cuo.hiptu!cuo.djsdmf#?!!!!!!!!!!!!!!=twh!ynmot>#iuuq;00xxx/x4/psh031110twh#!dmbtt>#i.6!x.6#!gjmm>#opof#!wjfxCpy>#1!1!35!35#!tusplf>#dvssfouDpmps#?=qbui!tusplf.mjofdbq>#spvoe#!tusplf.mjofkpjo>#spvoe#!tusplf.xjeui>#3#!e>#N5!7i27N5!23i27N5!29i8#!0?=0twh?!!!!!!!!!!!!=0mbcfm?!!!!!!!!!!!!!!!!!!!!=vm!ubcjoefy>#1#!dmbtt>#nfov!nfov.dpnqbdu!espqepxo.dpoufou!nu.4!q.3!tibepx!ch.cbtf.211!spvoefe.cpy!x.63#?!!!!!!!!!!!!!!!!!!!!!!!!=mj?!!!!!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00ejtdpse/hh0bKNrBySI#?Dpnnvojuz=0b?!!!!!!!!!!!!!!!!!!!!!!!!=0mj?!!!!!!!!!!!!!!!!!!!!!!!!=mj?!!!!!!!!!!!!!!!!!!!!!!!!!!!!=b?Dsfejut=0b?!!!!!!!!!!!!!!!!!!!!!!!!=0mj?!!!!!!!!!!!!!!!!!!!!=0vm?!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=ejw!dmbtt>#obwcbs.dfoufs#?!!!!!!!!!!!!!!!!=b!dmbtt>#cuo!cuo.hiptu!opsnbm.dbtf!ufyu.ym!#?Mvdje=0b?!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=ejw!dmbtt>#obwcbs.foe!#?!!!!!!!!!!!!!!!!=mbcfm!dmbtt>#txbq!txbq.spubuf#?!!!!!!!!!!!!!!!!!!!!=joqvu!uzqf>#difdlcpy#!podmjdl>#uphhmfUifnf)*<#0?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!=twh!dmbtt>#txbq.po!gjmm.dvssfou!x.8!i.7#!ynmot>#iuuq;00xxx/x4/psh031110twh#!wjfxCpy>#1!1!35!35#?=qbui!e>#N6/75-28m./82/82b2-2-1-1-1-1-2/52-2-2-1-1-1-2/52-1m/82./82B2-2-1-1-1-6/75-28[N6-23b2-2-1-1-1.2.2I4b2-2-1-1-1-1-3I5B2-2-1-1-1-6-23[n8.8b2-2-1-1-1-2.2W4b2-2-1-1-1.3-1W5B2-2-1-1-1-23-6[N6/75-8/16b2-2-1-1-1-/8/3:-2-2-1-1-1-/82./3:-2-2-1-1-1-1.2/52m./82./82B2-2-1-1-1-5/:4-7/45[n23-/3:b2-2-1-1-1-/8./3:m/82./82b2-2-1-2-1.2/52.2/52M28-6/75b2-2-1-1-1-1-2/52B2-2-1-1-1-28/77-8/45[N32-22I31b2-2-1-1-1-1-3i2b2-2-1-1-1-1.3[n.:-9b2-2-1-1-1.2-2w2b2-2-1-1-1-3-1W31B2-2-1-1-1-23-2:[N29/47-28B2-2-1-1-1-28-29/47m/82/82b2-2-1-1-1-2/52-1-2-2-1-1-1-1.2/52[N23-7/6B6/6-6/6-1-2-1-28/6-23-6/62-6/62-1-1-1-23-7/6[n1-:B4/6-4/6-1-2-2-26/6-23-4/6-4/6-1-1-2-23-26/6[#0?=0twh?!!!!!!!!!!!!!!!!!!!!=twh!dmbtt>#txbq.pgg!gjmm.dvssfou!x.8!i.7#!ynmot>#iuuq;00xxx/x4/psh031110twh#!wjfxCpy>#1!1!35!35#?=qbui!e>#N32/75-24b2-2-1-1-1.2/16./25-9/16-9/16-1-1-2.4/48/84B9/26-9/26-1-1-2-:/19-6/5:b9/6:-9/6:-1-1-2-/36.3B2-2-1-1-1-9-3/47-21/25-21/25-1-2-1-33-25/16-2-2-1-1-1-32/75-24[n.:/6-7/7:B9/25-9/25-1-1-2-8/19-6/33w/38B21/26-21/26-1-1-1-28/33-26/74b:/8:-:/8:-1-1-1-3/2./33B9/22-9/22-1-1-2-23/25-2:/84[#0?=0twh?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!=0mbcfm?!!!!!!!!!!!!=0ejw?!!!!!!!!=0ejw?!!!!!!!!=ejw!dmbtt>#ifsp!njo.i.tdsffo!ch.cbtf.311!#?!!!!!!!!!!!!=ejw!dmbtt>#ifsp.dpoufou!ufyu.dfoufs!#?!!!!!!!!!!!!!!!!=ejw!dmbtt>#nby.x.ne!#?!!!!!!!!!!!!!!!!!!!!=i2!dmbtt>#ufyu.6ym!gpou.cpme!ipwfs``cuo!opefIpwfs#?Mvdje=0i2?!!!!!!!!!!!!!!!!!!!!=q!dmbtt>#qz.7!!ipwfs``cuo!opefIpwfs#?Mvdje!jt!uif!xfc.qspyz!pg!uif!gvuvsf-!gfbuvsjoh!b!cfbvujgvmmz!dsbgufe!gspou.foe!bmpoh!xjui!bcpvu;cmbol!dmpbljoh!boe!nboz!puifs!gfbuvsft!uibu!tfu!ju!bqbsu!gspn!uif!sftu/!Kpjo!pvs!!!!!!!!!!!!!!!!!!!!!!!!=b!dmbtt>#mjol#!isfg>#iuuqt;00ejtdpse/hh0bKNrBySI#?Ejtdpse=0b?!gps!npsf!mjolt!boe!tvqqpsu/!!!!!!!!!!!!!!!!!!!!=0q?!!!!!!!!!!!!!!!!!!!!=joqvu!uzqf>#ufyu#!qmbdfipmefs>#Uzqf!ifsf#!dmbtt>#joqvu!joqvu.cpsefsfe!joqvu.pvumjof!!x.gvmm!nby.x.yt#!je>#tsdijoqvu#?!!!!!!!!!!!!!!!!!!!!=cvuupo!dmbtt>#cuo!cuo.bdujwf!cuo.hiptu#!je>#tsdicvuupo#?Tfbsdi=0cvuupo?!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=0ejw?!!!!!!!!=0ejw?!!!!!!!!=gppufs!dmbtt>#gppufs!jufnt.dfoufs!q.5!ch.ofvusbm!ufyu.ofvusbm.dpoufou!#?!!!!!!!!!!!!=ejw!dmbtt>#jufnt.dfoufs!hsje.gmpx.dpm!#?!!!!!!!!!!!!!!!!=twh!xjeui>#47!#!ifjhiu>#47!#!wjfxCpy>#1!1!35!35!#!ynmot>#iuuq;00xxx/x4/psh031110twh!#!gjmm.svmf>#fwfopee!#!dmjq.svmf>#fwfopee!#!dmbtt>#gjmm.dvssfou!#?=qbui!e>#!#?=0qbui?=0twh?!!!!!!!!!!!!!!!!=q?Mvdje!Dpqzsjhiu!ê!3133=0q?!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=ejw!dmbtt>#hsje.gmpx.dpm!hbq.5!ne;qmbdf.tfmg.dfoufs!ne;kvtujgz.tfmg.foe!#?!!!!!!!!!!!!!!!!=b?=twh!ynmot>#iuuq;00xxx/x4/psh031110twh!#!xjeui>#35!#!ifjhiu>#35!#!wjfxCpy>#1!1!35!35!#!dmbtt>#gjmm.dvssfou!#?=qbui!e>#N35!5/668d./994/4:3.2/943/767.3/939/886!2/128./71:!2/8:9.2/685!3/276.3/835./:62/675.3/116/:85.4/238!2/2:6./9:8./:68.3/289.2/666.4/6:5.2/666.4/28:!!!!!!!!!!!!!!!!!!!!!!!!1.6/626!3/:77.5/8:8!7/156.5/1:2./316.8/82:.3/276.21/259.6/255.2/3:!3/324./77:!6/219!2/634!7/685./917./137.2/677./358.3/33:./727./165!3/392!2/692!5/526!4/:5:!5/9:./7:4/299.2/563/343.3/335/195/737!2/:67!3/555!4/48:!5/7!4/52:.3/18!2/734.5/789!!!!!!!!!!!!!!!!!!!!!!!!3/459.8/3:!3/15!3/28:!2/4:8!5/879!3/323!8/659!3/323!:/253!1!25/418.8/832!24/::6.25/757/:73./7:6!2/8:8.2/673!3/568.3/65:{!#?=0qbui?=0twh?!!!!!!!!!!!!!!=0b?!!!!!!!!!!!!!!!!=b?=twh!ynmot>#iuuq;00xxx/x4/psh031110twh!#!xjeui>#35!#!ifjhiu>#35!#!wjfxCpy>#1!1!35!35!#!dmbtt>#gjmm.dvssfou!#?=qbui!e>#N2:/726!4/295d.4/715./357.22/742./356.26/34!1.4/9:8/377.5/467!3/73.5/496!9/927/13:!7/296/595!9/65:!5/496!9/927!4/7/356!!!!!!!!!!!!!!!!!!!!!!!!22/737/357!26/34!1!4/9:8./377!5/467.3/73!5/496.9/927./13:.7/296./595.9/65:.5/496.9/927{n.21/726!23/927w.9m9!4/::4.9!5/118{!#?=0qbui?=0twh?=0b?!!!!!!!!!!!!!!!!=b?=twh!ynmot>#iuuq;00xxx/x4/psh031110twh!#!xjeui>#35!#!ifjhiu>#35!#!wjfxCpy>#1!1!35!35!#!dmbtt>#gjmm.dvssfou!#?=qbui!e>#N:!9i.4w5i4w23i6w.23i4/753m/469.5i.5w.2/778d1./:66/2:3.2/444!2/226.2/444i3/996w.6i.4/919d.4/6:7!1.6/2:3!2/694.6/2:3!!!!!!!!!!!!!!!!!!!!!!!!5/726w4/496{!#?=0qbui?=0twh?=0b?!!!!!!!!!!!!=0ejw?!!!!!!!!=0gppufs?!!!!!!!!=tdsjqu?!!!!!!!!!!!!wbs!jojuDvstps!>!ofx!OpefDvstps)|!!!!!!!!!!!!!!!!dvstps;!usvf-!!!!!!!!!!!!!!!!opef;!usvf-!!!!!!!!!!!!!!!!dvstps`wfmpdjuz;!2-!!!!!!!!!!!!!!!!opef`wfmpdjuz;!/46-!!!!!!!!!!!!!!!!obujwf`dvstps;!(opof(-!!!!!!!!!!!!!!!!fmfnfou`up`ipwfs;!(/opefIpwfs(-!!!!!!!!!!!!!!!!dvstps`dmbtt`ipwfs;!(ejtbcmf(-!!!!!!!!!!!!!!!!opef`dmbtt`ipwfs;!(fyqboe(-!!!!!!!!!!!!!!!!ijef`npef;!usvf-!!!!!!!!!!!!!!!!ijef`ujnjoh;!3111-!!!!!!!!!!!!~*<!!!!!!!!=0tdsjqu?!!!!!!!!=tdsjqu!tsd>#/0kt0xjoepxIboemfs/kt!#?=0tdsjqu?!!!!!!!!=tdsjqu!tsd>#vw0vw/cvoemf/kt#?=0tdsjqu?!!!!!!!!=tdsjqu!tsd>#vw0vw/dpogjh/kt#?=0tdsjqu?!!!!!!!!=tdsjqu!tsd>#joefy/kt#?=0tdsjqu?!!!!!!!!=tdsjqu!tsd>#/0kt0ebslnpef/kt!#?=0tdsjqu?!!!!=0ejw?=0cpez?=0iunm?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript>You must enable JavaScript to see this text.</noscript>
